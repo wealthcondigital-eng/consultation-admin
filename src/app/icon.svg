@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!--
+    The browser-tab mark: the same shield-and-cross as `BrandMark`, on the same
+    blue gradient, so a pinned tab reads as this console rather than as the
+    default globe.
+
+    Lives at `app/icon.svg` rather than `public/favicon.ico` on purpose. Next
+    serves this and injects an explicit <link rel="icon">, which is what stops
+    Chrome falling back to probing /favicon.ico — the request that was 404ing.
+    An .ico would also work, but a vector stays sharp on a retina tab strip and
+    is a fraction of the bytes.
+  -->
+  <defs>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6" />
+      <stop offset="1" stop-color="#1e40af" />
+    </linearGradient>
+  </defs>
+
+  <rect width="32" height="32" rx="8" fill="url(#brand)" />
+
+  <path
+    d="M16 6.5 9 9.1v5c0 4 2.8 7.6 7 8.9 4.2-1.3 7-4.9 7-8.9v-5L16 6.5Z"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="1.9"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M16 11.6v6M13 14.6h6"
+    stroke="#ffffff"
+    stroke-width="2.2"
+    stroke-linecap="round"
+  />
+</svg>
