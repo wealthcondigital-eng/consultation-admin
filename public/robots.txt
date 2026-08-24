@@ -1,0 +1,3 @@
+# An approval console has nothing a search engine should ever see.
+User-agent: *
+Disallow: /
